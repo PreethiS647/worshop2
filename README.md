@@ -216,9 +216,6 @@ for idx in range(len(images)):
     plt.show()
 
 ```
-<img width="502" height="527" alt="image" src="https://github.com/user-attachments/assets/dbd9c5c8-c1b1-47ce-9e97-f93c38d8795a" />
-
-<img width="512" height="528" alt="image" src="https://github.com/user-attachments/assets/05b322b5-90c6-4961-8f56-43d00d8a0744" />
 
 
 
