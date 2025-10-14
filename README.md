@@ -187,21 +187,7 @@ plt.show()
 <img width="740" height="610" alt="image" src="https://github.com/user-attachments/assets/82992100-a34a-4a01-b2af-a36c974c3194" />
 
 ```
-import matplotlib.pyplot as plt
-import torchvision
 
-# Get one batch of test images
-dataiter = iter(test_loader)
-images, labels = next(dataiter)
-
-images = images.to(device)
-labels = labels.to(device)
-
-# Predict
-model.eval()
-with torch.no_grad():
-    outputs = model(images)
-    _, preds = torch.max(outputs, 1)
 
 
 
