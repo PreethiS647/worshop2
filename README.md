@@ -203,17 +203,7 @@ with torch.no_grad():
     outputs = model(images)
     _, preds = torch.max(outputs, 1)
 
-# Show images and predictions
-images = images.cpu()
-labels = labels.cpu()
-preds = preds.cpu()
 
-for idx in range(len(images)):
-    img = torchvision.transforms.functional.to_pil_image(images[idx])
-    plt.imshow(img)
-    plt.title(f"Pred: {train_data.classes[preds[idx]]}, True: {train_data.classes[labels[idx]]}")
-    plt.axis('off')
-    plt.show()
 
 ```
 
